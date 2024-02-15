@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+import bs4
 import requests
 import pandas as pd
 
@@ -9,7 +9,7 @@ class projectQueue:
 
     def getETUTable(self):
         r = requests.get(self.url,verify=False)
-        soup = BeautifulSoup(r.text,features='html5lib')
+        soup = bs4.BeautifulSoup(r.text,features='html5lib')
         table = soup.find('table')
 
         headers = []

@@ -1,3 +1,4 @@
 pandas
 altair
 bs4
+lxml

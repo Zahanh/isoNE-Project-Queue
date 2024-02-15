@@ -1,6 +1,3 @@
 pandas
 altair
 bs4
-requests
-datetime
-warnings
